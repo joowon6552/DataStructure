@@ -15,6 +15,7 @@ public class RecursiveStructureTest2 {
 		System.out.println(third);
 		
 		System.out.println(fibo(20));
+		System.out.println(fibo2(20));
 
 	}
 	
@@ -34,5 +35,13 @@ public class RecursiveStructureTest2 {
 		
 		return third;
 	}
+	
+	static int fibo2(int n) {
+		if(n < 3) {
+			return 1;
+		}
+		
+		return fibo2(n-1) + fibo2(n-2);
+	} 
 
 }
